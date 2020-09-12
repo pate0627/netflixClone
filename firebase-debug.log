@@ -1,0 +1,72 @@
+[debug] [2020-09-11T23:35:25.819Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T23:35:25.821Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-11T23:35:25.821Z] CLI Version:   8.10.0
+[debug] [2020-09-11T23:35:25.821Z] Platform:      win32
+[debug] [2020-09-11T23:35:25.821Z] Node Version:  v12.18.2
+[debug] [2020-09-11T23:35:25.822Z] Time:          Fri Sep 11 2020 20:35:25 GMT-0300 (Atlantic Daylight Time)
+[debug] [2020-09-11T23:35:25.823Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T23:35:25.823Z] 
+[debug] [2020-09-11T23:35:25.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-11T23:35:25.829Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nisarg Patel\Documents\React js\netflix-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using netflix-clone-f72d5. 
+[debug] [2020-09-11T23:35:39.015Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-11T23:35:39.016Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-11T23:35:39.216Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 23:35:38 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-11T23:35:39.231Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-f72d5  
+ 
+[debug] [2020-09-11T23:35:39.583Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 11 Sep 2020 23:35:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-11T23:35:39.583Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-09-11T23:35:39.587Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-09-11T23:35:39.744Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:421:28)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-f72d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-09-11T23:37:53.863Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T23:37:53.866Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nisarg Patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2020-09-11T23:37:53.866Z] CLI Version:   8.10.0
+[debug] [2020-09-11T23:37:53.866Z] Platform:      win32
+[debug] [2020-09-11T23:37:53.866Z] Node Version:  v12.18.2
+[debug] [2020-09-11T23:37:53.867Z] Time:          Fri Sep 11 2020 20:37:53 GMT-0300 (Atlantic Daylight Time)
+[debug] [2020-09-11T23:37:53.867Z] ----------------------------------------------------------------------
+[debug] [2020-09-11T23:37:53.868Z] 
+[debug] [2020-09-11T23:37:53.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-11T23:37:53.875Z] > authorizing via signed-in user
+[debug] [2020-09-11T23:37:53.880Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=1000  
+ 
+[debug] [2020-09-11T23:37:54.200Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 11 Sep 2020 23:37:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
