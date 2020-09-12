@@ -76,7 +76,8 @@ checkBrowsers(paths.appPath, isInteractive)
     }
 
     const config = configFactory("development");
-    const protocol = process.env.HTTPS === "true" ? "https" : "https";
+    // const protocol = process.env.HTTPS === "true" ? "https" : "https";
+    const protocol = "https";
     const appName = require(paths.appPackageJson).name;
     const useTypeScript = fs.existsSync(paths.appTsConfig);
     const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === "true";
