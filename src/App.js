@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="app">
       <Nav />
-      <h1>This is working fine</h1>
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
